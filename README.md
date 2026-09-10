@@ -1,5 +1,10 @@
 # Sistema de Gestão de Tarefas
 
+# Tarefa realizada pelo trio:
+## * João Victor Barboza Debossan - Nº de Matrícula: 202422915
+## * Lucas Malfacine Rodrigues    - Nº de Matrícula: 202422972
+## * Lucca de Andrade Vianna Braz - Nº de Matrícula: 202422924
+
 Aplicação web feita com Django para gerenciar tarefas.
 
 ## Como rodar
