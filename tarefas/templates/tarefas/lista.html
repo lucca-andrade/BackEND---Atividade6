@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de tarefas</title>
+    <style>
+        .Pendente { color: red; }
+        .Concluida { color: green; }
+    </style>
+</head>
+<body>
+    <h1>Lista inicial de tarefas</h1>
+    {% if tarefas %}
+    <ul>
+        {% for tarefa in tarefas %}
+        <li class="{{ tarefa.situacao }}">
+            <strong>{{ tarefa.titulo }}</strong> —
+            prioridade: {{ tarefa.prioridade }} —
+            situação: {{ tarefa.situacao }}
+        </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>Nenhuma tarefa cadastrada até o momento.</p>
+    {% endif %}
+    <a href="{% url 'inicio' %}">Voltar ao início</a>
+</body>
+</html>
